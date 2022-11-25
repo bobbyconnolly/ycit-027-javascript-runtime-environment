@@ -68,7 +68,7 @@ Check out the Node.js API reference for a complete list of Node.js APIs: https:/
 
 A message queue is a data structure that uses the First In, First Out (FIFO) principle to temporarily store messages until they are processed by a receiving program (in our case, the JavaScript engine). Messages are added to the message queue by the browser's API or Node.js API. Messages are removed (dequeued) from the message queue by the event loop.
 
-Some environments will have more than one message queue. For example, the browser has a macro-task queue and a micro-task queue. Messages in the micro-task queue are processed before messages in the macro-task queue.
+Some environments will have more than one message queue. For example, the browser has a task queue and a micro-task queue. Messages in the micro-task queue are processed before messages in the task queue.
 
 ## Event Loop
 
